@@ -1,5 +1,6 @@
 {% extends "store/main.html" %}
 {% load static %}
+{% load humanize %}
 
 
 {% block content %}
@@ -33,17 +34,17 @@
 						<div class="form-field">
 							<input class="form-control" type="text" name="country" placeholder="Zip code..">
 						</div>
-					</div>
+				</div>
                     <input id="form-button"  class="btn btn-success btn-block"type="submit" value="Continue">
-                </div>
+            </div>
             </form>
-        </div>
+    </div>
         <br>
 			<div class="box-element hidden" id="payment-info">
 				<small>Paypal Options</small>
 			</div>
         
-    </div>
+   
 
     <div class="col-lg-6">
         <div class="box-element">
@@ -51,18 +52,21 @@
             <hr>
             <h3>Order Summary</h3>
             <hr>
+            {% for item in items  %}
+
             <div class="cart-row">
-                <div style="flex:2"><img class="row-image" src="{% static 'images/placeholder.png' %}"></div>
-                <div style="flex:2"><p>Product 1</p></div>
-                <div style="flex:1"><p>UGX 3000</p></div>
-                <div style="flex:1"><p>x2</p></div>
-                </div>
-            <h5>Items:   2</h5>
-            <h5>Total:   UGX 4000</h5>
+                <div style="flex:2"><img class="row-image" src="{{item.product.image.url}}"></div>
+                <div style="flex:2"><p>{{item.product.name}}</p></div>
+                <div style="flex:1"><p>UGX{{item.product.price|intcomma}}</p></div>
+                <div style="flex:1"><p>x{{item.quantity}}</p></div>
             </div>
+            {% endfor %}
+            <h5>Items:  {{order.get_cart_items|intcomma}}</h5>
+            <h5>Total:  UGX{{order.get_cart_total|intcomma}}</h5>
         </div>
     </div>
 </div>
+
        
 
 </div>
