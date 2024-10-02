@@ -10,6 +10,8 @@ Welcome to the Django eCommerce Website project! This is a fully-featured eComme
 - Payment gateway integration (e.g., PayPal, Stripe)
 - Admin dashboard for managing products, orders, and users
 
+![Ashop](https://imgur.com/dkLzsUy.png)
+
 
 ## Requirements
 
@@ -76,7 +78,6 @@ python manage.py createsuperuser
 ## Usage
 
 1. The home page contains all the products. You can add the products to your cart by clicking on the Add To Cart button and you will see the number of items in the cart icon update dynamically.
-<img src="https://imgur.com/dkLzsUy">
 ![Ashop](https://imgur.com/dkLzsUy)
 
 
