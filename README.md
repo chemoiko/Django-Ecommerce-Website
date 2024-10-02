@@ -88,7 +88,9 @@ python manage.py createsuperuser
 5. The user can confirm order using the Checkout button.
 6. If the user is logged in, he will not be asked to fill in his name and email.
 7. The user will fill in the shipping details and click continue to payment.
-<img src="https://imgur.com/undefined.png">
+<img src="(https://imgur.com/MZSNe0G.png)">
 8. A guest user can also order items through cookies.
+
+
 
 _Reference Dennis Ivy YouTube tutorial_
