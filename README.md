@@ -10,7 +10,7 @@ Welcome to the Django eCommerce Website project! This is a fully-featured eComme
 - Payment gateway integration (e.g., PayPal, Stripe)
 - Admin dashboard for managing products, orders, and users
 
-![Ashop](https://imgur.com/dkLzsUy.png)
+![Ashop](https://imgur.com/R7VmbBA.png)
 
 
 ## Requirements
@@ -78,7 +78,7 @@ python manage.py createsuperuser
 ## Usage
 
 1. The home page contains all the products. You can add the products to your cart by clicking on the Add To Cart button and you will see the number of items in the cart icon update dynamically.
-![Ashop](https://imgur.com/dkLzsUy.png)
+![Ashop](https://imgur.com/R7VmbBA.png)
 
 
 3. Click on the cart icon in nav to see all the items you added to cart.
@@ -88,7 +88,7 @@ python manage.py createsuperuser
 5. The user can confirm order using the Checkout button.
 6. If the user is logged in, he will not be asked to fill in his name and email.
 7. The user will fill in the shipping details and click continue to payment.
-![Ashop](https://imgur.com/MZSNe0G.png)
+![Ashop](https://imgur.com/sisYuhs.png)
 
 9. A guest user can also order items through cookies.
 
